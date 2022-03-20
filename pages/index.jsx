@@ -1,17 +1,24 @@
+import Logo from "../components/Logo"
+import Illustration from "../components/Illustration"
+import Header from "../components/Header"
+
+import WiPDark from "../public/progress/WiP-Dark.gif"
+import WiPWhite from "../public/progress/WiP-white.gif"
+
 const HomePage = () => {
+  let dark = false
   return(
-    <div className="bg-dark text-neutral">
-      dark
-      <div className="bg-neutral text-dark">
-        neutral
-      </div>
-      <div className="bg-secondary">
-        secondary
-      </div>
-      <div className="bg-primary">
-        primary 
+    <div className={dark ? "dark" : ""}>
+      <div className="bg-neutral text-dark dark:bg-dark dark:text-neutral">
+        <Header/> 
+        <main>
+          <h1>Work in Progress</h1>
+          <Logo size={100} dark={false}/>
+          <Illustration size={500} caption="Boy standing at desk working on his computer" image={dark ? WiPDark : WiPWhite}/>
+        </main>
       </div>
     </div>
+    
     
   )
 }
