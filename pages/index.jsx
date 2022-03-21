@@ -2,6 +2,8 @@ import Logo from "../components/Logo"
 import Illustration from "../components/Illustration"
 import Header from "../components/Header"
 
+
+import Head from "next/head"
 import Link from "next/link"
 
 import WiPDark from "../public/progress/WiP-Dark.gif"
@@ -11,6 +13,14 @@ const HomePage = () => {
   let dark = false
   return(
     <div className={dark ? "dark" : ""}>
+      <Head>
+        <title>VB-Dev | Web Developer</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content={`VB-Dev is a personnal website for Vincent Bouton, Web Developer. The Website is currently in construction. Come later to see if he's done.`}
+        />
+      </Head>
       <div className="bg-neutral text-dark dark:bg-dark dark:text-neutral min-h-screen">
         <div>
           <Header dark={dark}/> 
