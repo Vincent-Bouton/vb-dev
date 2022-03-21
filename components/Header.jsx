@@ -3,7 +3,7 @@ import Navbar from "./Navbar.jsx"
 const Header = (props) => {
   return (
     <header>
-      <Navbar/>
+      <Navbar dark={props.dark}/>
     </header>
   )
 }

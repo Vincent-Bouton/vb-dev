@@ -6,14 +6,14 @@ import WiPDark from "../public/progress/WiP-Dark.gif"
 import WiPWhite from "../public/progress/WiP-white.gif"
 
 const HomePage = () => {
-  let dark = false
+  let dark = true
   return(
     <div className={dark ? "dark" : ""}>
       <div className="bg-neutral text-dark dark:bg-dark dark:text-neutral">
-        <Header/> 
+        <Header dark={dark}/> 
         <main>
           <h1>Work in Progress</h1>
-          <Logo size={100} dark={false}/>
+          <Logo size={100} dark={dark}/>
           <Illustration size={500} caption="Boy standing at desk working on his computer" image={dark ? WiPDark : WiPWhite}/>
         </main>
       </div>
