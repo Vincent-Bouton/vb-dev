@@ -16,9 +16,9 @@ const HomePage = () => {
           <Header dark={dark}/> 
         </div>
         <main className="container m-auto">
-          <h1 className="text-3xl max-w-max mx-auto p-3 md:text-6xl">Welcome to my Website</h1>
+          <h1 className="text-3xl max-w-max mx-auto p-3 md:text-6xl border-b-2 border-dark">Welcome to my Website</h1>
           <section>
-            <h2 className="text-2xl md:text-4xl text-center">Work in Progress</h2>
+            <h2 className="text-2xl md:text-4xl text-center mt-4">Work in Progress</h2>
             <div className="mx-auto max-w-max transition-all md:pl-14">
               <Illustration size={500} caption="Boy standing at desk working on his computer" image={dark ? WiPDark : WiPWhite}/>
             </div>  
