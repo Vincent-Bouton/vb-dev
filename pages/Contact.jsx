@@ -9,7 +9,7 @@ import In from "../public/linkedin.png"
 const Contact = () => {
   return (
     <>
-      <div className="bg-dark text-neutral h-screen">   
+      <div className="bg-dark text-neutral min-h-screen">   
       <Header dark={true}/>
       <main className="container mx-auto">
         <h1 className="text-4xl text-center md:text-6xl border-b-2 border-neutral max-w-max mx-auto p-3">Need to contact me ?</h1>
