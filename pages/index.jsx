@@ -2,7 +2,6 @@ import Logo from "../components/Logo"
 import Illustration from "../components/Illustration"
 import Header from "../components/Header"
 
-
 import Head from "next/head"
 import Link from "next/link"
 
@@ -34,7 +33,7 @@ const HomePage = () => {
             </div>  
             <p className="text-xl text-center sm:w-96 mx-auto">The website is under construction, do not hesitate to come back later.</p>
             <div className="mt-4">
-              <Link href="/contact">
+              <Link href="/Contact">
                 <div className="max-w-max py-4 px-4 mx-auto text-xl transition text-primary rounded-sm hover:bg-primary hover:bg-opacity-20 hover:cursor-pointer" tabIndex="0">
                   Contact Me
                 </div>

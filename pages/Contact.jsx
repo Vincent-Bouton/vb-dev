@@ -6,17 +6,9 @@ import Mail from "../public/mail.png"
 import Phone from "../public/phone-call.png"
 import In from "../public/linkedin.png"
 
-const contact = () => {
+const Contact = () => {
   return (
     <>
-      <Head>
-        <title>VB-Dev | Web Developer - Contact</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta
-          name="description"
-          content={`VB-Dev Contact Page. Is a personnal website for Vincent Bouton, Web Developer. The Website is currently in construction. Come later to see if he's done.`}
-        />
-      </Head>
       <div className="bg-dark text-neutral h-screen">   
       <Header dark={true}/>
       <main className="container mx-auto">
@@ -54,4 +46,4 @@ const contact = () => {
   )
 }
 
-export default contact
+export default Contact
