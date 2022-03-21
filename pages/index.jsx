@@ -20,7 +20,7 @@ const HomePage = () => {
           content={`VB-Dev is a personnal website for Vincent Bouton, Web Developer. The Website is currently in construction. Come later to see if he's done.`}
         />
       </Head>
-      <div className="bg-neutral text-dark">
+      <div className="bg-neutral text-dark h-screen">
         <div>
           <Header dark={dark}/> 
         </div>
